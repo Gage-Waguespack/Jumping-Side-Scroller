@@ -1,6 +1,4 @@
 # Jumping-Side-Scroller
- 
-###### Jumping Sider Scroller
 
 ## Your goal
 
