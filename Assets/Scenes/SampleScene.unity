@@ -1925,6 +1925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpForce: 30
   _playerRef: {fileID: 1207666106}
+  _playerHealth: {fileID: 1207666107}
 --- !u!1 &1306266359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,6 +1936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306266360}
   - component: {fileID: 1306266361}
+  - component: {fileID: 1306266362}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -2013,6 +2015,49 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1306266362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306266359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce5c20deca00c14bab35fcbf6767860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 1207666107}
+  _healthGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0.9374999, b: 0, a: 1}
+    key2: {r: 0, g: 1, b: 0.15451717, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 30647
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  _fill: {fileID: 0}
 --- !u!1 &1307707323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,7 +3523,7 @@ PrefabInstance:
     - target: {fileID: 8607523650212035719, guid: 6ee181b48eacb0645aa225698d566885,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8607523650212035719, guid: 6ee181b48eacb0645aa225698d566885,
         type: 3}

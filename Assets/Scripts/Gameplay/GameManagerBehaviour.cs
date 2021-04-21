@@ -72,6 +72,12 @@ public class GameManagerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_isPaused)
+            Time.timeScale = 0.0000001f;
+
+        else
+            Time.timeScale = 1;
+
         _gameOver = _playerHealth.Health <= 0;
 
         _gameOverScreen.SetActive(_gameOver);

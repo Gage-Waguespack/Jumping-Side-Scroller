@@ -9,10 +9,12 @@ public class JumpBehaviour : MonoBehaviour
     public float JumpForce = 5;
     [SerializeField]
     private GameObject _playerRef;
+    [SerializeField]
+    private HealthBehaviour _playerHealth;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
-            Destroy(gameObject);
+           _playerHealth.TakeDamage(1);
     }
 
     // Start is called before the first frame update
