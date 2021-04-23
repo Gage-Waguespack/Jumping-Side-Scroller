@@ -1,7 +1,7 @@
 # GameManagerBehaviour
 
 public static GameManagerBehaviour Instance
-*use: gives objects a refference to the GameManagerBehaviour
+use: gives objects a refference to the GameManagerBehaviour
 
 private static bool _gameOver
 use: bool used to end the game
