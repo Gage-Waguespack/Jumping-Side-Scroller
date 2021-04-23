@@ -10,12 +10,13 @@ public class WallSpawnBehaviour : MonoBehaviour
     //Pipe Reference
     public GameObject WallRef;
 
-    // Start is called before the first frame update
     void Start()
     {
+        //Starts looking at all enumerators passed through (in this case, spawing the walls)
         StartCoroutine(SpawnWalls());
     }
 
+    //Created an IEnumerator for spawning walls to use in the Coroutine in start
     public IEnumerator SpawnWalls()
     {
         float randY = 0;

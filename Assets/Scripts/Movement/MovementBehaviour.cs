@@ -8,15 +8,14 @@ public class MovementBehaviour : MonoBehaviour
     public float StartCos = 0;
 
     
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //moves their transform on the x axis based on horizontal speed.
         transform.position -= new Vector3(HorizontalSpeed, 0, 0) * Time.deltaTime;
         StartCos += Time.deltaTime;
     }
