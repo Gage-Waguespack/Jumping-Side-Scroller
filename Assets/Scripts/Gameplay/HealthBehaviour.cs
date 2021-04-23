@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class HealthBehaviour : MonoBehaviour
 {
+    //Serialized variable that contains the health value
     [SerializeField]
     private float _health;
+
+    //Serialized variable that destroys the player
     [SerializeField]
     private bool _destroyOnDeath = true;
 
+    //A variable that takes in the players current health
     public float Health
     {
         get
@@ -29,12 +33,12 @@ public class HealthBehaviour : MonoBehaviour
             _health = 0; 
     }
 
-    // Update is called once per frame
     void Update()
     {
         //If the object health is lower or equal to 0, destroy the object
         if (_health <= 0 && _destroyOnDeath)
             Destroy(gameObject);
+        //Else, don't destroy object, deactivate it instead
         else if (_health <= 0)
             gameObject.SetActive(false);
     }

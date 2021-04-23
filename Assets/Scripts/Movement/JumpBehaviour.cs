@@ -11,21 +11,24 @@ public class JumpBehaviour : MonoBehaviour
     private GameObject _playerRef;
     [SerializeField]
     private HealthBehaviour _playerHealth;
+
+    //Checks if the object that collides with the object is tagged obstacle
+    //If so, takeDamage
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
            _playerHealth.TakeDamage(1);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
+        //Checks rigidBody on start
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //On update, checks if you press LMouse, if so, apply force on the y axis
         if (_playerRef.transform.position.y <= 3)
         {
             if (Input.GetMouseButtonDown(0))
