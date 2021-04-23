@@ -6,7 +6,8 @@ This game is all about timing, you're goal is to get a high score to show your f
 
 ## How to play
 
-In order to play you have to use Left Click or Tap your screen on the phone
+In order to play you have to go to https://gage-waguespack.github.io/Jumping-Side-Scroller/Player/
+Use Left Click or Tap your screen on the phone
 
 ## Features
  
