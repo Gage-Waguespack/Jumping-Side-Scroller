@@ -13,7 +13,7 @@ public class ScoreBoxBehaviour : MonoBehaviour
     //Every time the player collides with the ScoreTracker, the score goes up
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("OnTriggerEnter");
+        //Checks if the gameObject colliding with the ScoreBox above the wall is the player
         if (collision.gameObject.CompareTag("Player"))
         {
             //IncrementScore is called when the player collides with the ScoreBox
